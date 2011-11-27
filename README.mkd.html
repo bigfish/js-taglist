@@ -1,0 +1,28 @@
+<h2>JS-Taglist</h2>
+
+<p>This is the good old <a href="http://www.vim.org/scripts/script.php?script_id=273">taglist</a> vim plugin, with some hacks applied to make it work better with JavaScript.</p>
+
+<h3>Instructions</h3>
+
+<p>Install and use the taglist.vim file exactly as you would the original plugin... ie. put it in your .vim/plugin/ folder.</p>
+
+<h3>NB! Requires a custom build of Exuberant CTags</h3>
+
+<p>I had to modify the JavaScript parser in Exuberant CTags to get it to work with modern Javascript.</p>
+
+<p>The modified ctags source code is in the <a href="https://github.com/bigfish/ctags_actionscript">ctags actionscript</a> repo. </p>
+
+<p>So you'll need to clone that repo and build it yourself as follows:</p>
+
+<pre><code>cd ctags_actionscript
+cd ctags-5.8
+make clean
+make
+sudo make install
+</code></pre>
+
+<p>The modifications make the parser very tolerant, which means all symbols are found 
+except perhaps multiple variable declarations on one line... try to avoid that for best results.</p>
+
+<p>This means its not really very well suited for generating tags files, but is well suited to the modified taglist plugin
+which is included.</p>
