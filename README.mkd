@@ -1,6 +1,6 @@
 ## JS-Taglist
 
-This is the good old taglist vim plugin, with some hacks applied to make it work better with JavaScript.
+This is the good old [taglist](http://www.vim.org/scripts/script.php?script_id=273) vim plugin, with some hacks applied to make it work better with JavaScript.
 
 ### Instructions
 Install and use the taglist.vim file exactly as you would the original plugin... ie. put it in your .vim/plugin/ folder.
