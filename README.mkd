@@ -13,11 +13,11 @@ The modified ctags source code is in the [ctags_actionscript](git@github.com:big
 
 So you'll need to clone that repo and build it yourself as follows:
 
-  cd ctags_actionscript
-  cd ctags-5.8
-  make clean
-  make
-  sudo make install
+    cd ctags_actionscript
+    cd ctags-5.8
+    make clean
+    make
+    sudo make install
 
 The modifications make the parser very tolerant, which means all symbols are found 
 except perhaps multiple variable declarations on one line... try to avoid that for best results.
